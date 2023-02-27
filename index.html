@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <button ondblclick="toggleMenu()" class="material-symbols-outlined">Menu</button>
+    <button ondblclick="toggleMenu()" class="material-symbols-outlined">menu</button>
     <nav class="navbar">
         <div class="logo">
             <img src="logo.png" alt="" style="width:100px;">
@@ -29,6 +29,12 @@
         <button class="material-symbols-outlined">apps</button>
         <img src="profile photo.jpg" alt="" style="width:150px;">
     </nav>
+
+    <script type="text/javascript">
+        const toggleMenu = () => {
+            document.body.classList.toggle("open")
+        }
+    </script>
 
 </body>
 </html>
