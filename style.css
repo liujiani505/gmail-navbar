@@ -114,4 +114,43 @@ body.open .navbar{
     width: 32px;
     height: 32px;
     margin-left: 8px;
+    border-radius: 100%;
+}
+
+@media (width >=500px) {
+    .navbar{
+        translate: 0 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0;
+        width: 100%;
+        height: 72px;
+        padding: 0 0 0 72px;
+    }
+    .logo{
+        margin-bottom: 0;
+    }
+    .search {
+        flex: 1 1 auto;
+    }
+}
+
+@media (width >=550px) {
+    .search {
+        flex: 0 0 auto;
+    }
+}
+
+@media (width >= 600px){
+    .navbar {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (width >=650px) {
+    .search input{
+        width: 280px;
+    }
 }
